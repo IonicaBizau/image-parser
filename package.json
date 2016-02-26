@@ -1,0 +1,26 @@
+{
+  "name": "image-parser",
+  "description": "An image parser that works.",
+  "keywords": [
+    "image",
+    "parser",
+    "an",
+    "that",
+    "works"
+  ],
+  "license": "MIT",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/IonicaBizau/image-parser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IonicaBizau/image-parser/issues"
+  },
+  "homepage": "https://github.com/IonicaBizau/image-parser#readme"
+}
