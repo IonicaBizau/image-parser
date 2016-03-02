@@ -29,5 +29,13 @@
     "gm-tools": "^1.0.0",
     "lwipify": "^1.4.1",
     "pixel-class": "^1.0.0"
-  }
+  },
+  "blah": {
+    "description": "This library uses [`lwip`](https://github.com/EyalAr/lwip) to parse the images falling back to GraphicsMagick. :art:",
+    "h_img": "http://i.imgur.com/DiPWcCW.png"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "devDependencies": {}
 }
