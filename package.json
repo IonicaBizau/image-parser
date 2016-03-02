@@ -22,5 +22,12 @@
   "bugs": {
     "url": "https://github.com/IonicaBizau/image-parser/issues"
   },
-  "homepage": "https://github.com/IonicaBizau/image-parser#readme"
+  "homepage": "https://github.com/IonicaBizau/image-parser#readme",
+  "dependencies": {
+    "cb-buffer": "^2.0.0",
+    "err": "^1.1.1",
+    "gm-tools": "^1.0.0",
+    "lwipify": "^1.4.1",
+    "pixel-class": "^1.0.0"
+  }
 }

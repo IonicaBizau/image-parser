@@ -13,22 +13,69 @@ $ npm i --save image-parser
 ```js
 "use strict";
 
-const imageParser = require("image-parser");
+const ImageParser = require("image-parser");
 
-console.log(imageParser());
+let img = new ImageParser("https://octodex.github.com/images/privateinvestocat.jpg");
+img.parse(err => {
+    if (err) { return console.error(err); }
+    console.log(img.getPixel(3, 3));
+    // PixelClass { r: 34, g: 30, b: 31, a: 1 }
+});
 ```
 
 ## Documentation
 
-### `imageParser(a, b)`
-An image parser that works.
+### `ImageParser(source, options)`
+Creates a new instance of `ImageParser`.
 
 #### Params
-- **Number** `a`: Param descrpition.
-- **Number** `b`: Param descrpition.
+- **String|Buffer** `source`: The image path/url or the a `Buffer` object.
+- **Object** `options`: The options object to pass to the `lwipify`.
 
 #### Return
-- **Number** Return description.
+- **ImageParser** The `ImageParser` instance.
+
+### `parse(cb)`
+Prepare the in-memory data (image pixels, buffers, size etc).
+
+#### Params
+- **Function** `cb`: The callback function.
+
+### `width()`
+Returns the image width.
+
+#### Return
+- **Number** The image width.
+
+### `height()`
+Returns the image height.
+
+#### Return
+- **Number** The image height.
+
+### `getPixel(x, y)`
+Gets the pixel at given coordinates.
+
+#### Params
+- **Number** `x`: The `x` coordinate.
+- **Number** `y`: The `y` coordinate.
+
+#### Return
+- **Pixel** The [`Pixel`](https://github.com/IonicaBizau/pixel-class) instance containing the pixel data.
+
+### `pixels()`
+Gets the image pixels.
+
+#### Return
+- **Array** An array of [`Pixel`](https://github.com/IonicaBizau/pixel-class) objects containing the pixel information.
+
+### `resize(width, height, cb)`
+Resizes the image.
+
+#### Params
+- **Number** `width`: The new image width.
+- **Number** `height`: The new image height.
+- **Function** `cb`: The callback function.
 
 ## How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
