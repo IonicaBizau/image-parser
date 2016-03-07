@@ -9,7 +9,7 @@
     "works"
   ],
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -27,7 +27,7 @@
     "cb-buffer": "^2.0.0",
     "err": "^1.1.1",
     "gm-tools": "^1.0.0",
-    "lwipify": "^1.4.1",
+    "lwipify": "^2.0.0",
     "pixel-class": "^1.0.0"
   },
   "blah": {
