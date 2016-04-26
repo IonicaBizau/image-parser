@@ -1,3 +1,4 @@
+
 [![image-parser](http://i.imgur.com/DiPWcCW.png)](#)
 
 # image-parser [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![Version](https://img.shields.io/npm/v/image-parser.svg)](https://www.npmjs.com/package/image-parser) [![Downloads](https://img.shields.io/npm/dt/image-parser.svg)](https://www.npmjs.com/package/image-parser) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
@@ -6,17 +7,18 @@
 
 This library uses [`lwip`](https://github.com/EyalAr/lwip) to parse the images falling back to GraphicsMagick. :art:
 
-## Installation
+## :cloud: Installation
 
 ```sh
 $ npm i --save image-parser
 ```
 
-## Example
+
+## :clipboard: Example
+
+
 
 ```js
-"use strict";
-
 const ImageParser = require("image-parser");
 
 let img = new ImageParser("https://octodex.github.com/images/privateinvestocat.jpg");
@@ -27,7 +29,8 @@ img.parse(err => {
 });
 ```
 
-## Documentation
+## :memo: Documentation
+
 
 ### `ImageParser(source, options)`
 Creates a new instance of `ImageParser`.
@@ -81,13 +84,18 @@ Resizes the image.
 - **Number** `height`: The new image height.
 - **Function** `cb`: The callback function.
 
-## How to contribute
+
+
+## :yum: How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
 
-## Where is this library used?
+## :dizzy: Where is this library used?
 If you are using this library in one of your projects, add it in this list. :sparkles:
 
-## License
+
+ - [`image-to-ascii`](https://github.com/IonicaBizau/image-to-ascii)—A Node.JS module that converts images to ASCII art.
+
+## :scroll: License
 
 [MIT][license] © [Ionică Bizău][website]
 
