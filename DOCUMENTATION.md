@@ -54,3 +54,20 @@ Resizes the image.
 - **Number** `height`: The new image height.
 - **Function** `cb`: The callback function.
 
+### `crop(width, height, x, y, cb)`
+Crops the image.
+
+#### Params
+- **Number** `width`: The crop width.
+- **Number** `height`: The crop height.
+- **Number** `x`: The X coordinate.
+- **Number** `y`: The Y coordinate.
+- **Function** `cb`: The callback function.
+
+### `save(filePath, cb)`
+Saves the image to disk.
+
+#### Params
+- **String** `filePath`: The output file path.
+- **Function** `cb`: The callback function.
+
