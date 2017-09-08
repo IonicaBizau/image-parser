@@ -6,6 +6,7 @@ You can see below the API reference of this module.
 Creates a new instance of `ImageParser`.
 
 #### Params
+
 - **String|Buffer** `source`: The image path/url or the a `Buffer` object.
 - **Object** `options`: The options object to pass to the `lwipify`.
 
@@ -16,6 +17,7 @@ Creates a new instance of `ImageParser`.
 Prepare the in-memory data (image pixels, buffers, size etc).
 
 #### Params
+
 - **Function** `cb`: The callback function.
 
 ### `width()`
@@ -34,6 +36,7 @@ Returns the image height.
 Gets the pixel at given coordinates.
 
 #### Params
+
 - **Number** `x`: The `x` coordinate.
 - **Number** `y`: The `y` coordinate.
 
@@ -50,6 +53,7 @@ Gets the image pixels.
 Resizes the image.
 
 #### Params
+
 - **Number** `width`: The new image width.
 - **Number** `height`: The new image height.
 - **Function** `cb`: The callback function.
@@ -58,6 +62,7 @@ Resizes the image.
 Crops the image.
 
 #### Params
+
 - **Number** `width`: The crop width.
 - **Number** `height`: The crop height.
 - **Number** `x`: The X coordinate.
@@ -68,6 +73,7 @@ Crops the image.
 Saves the image to disk.
 
 #### Params
+
 - **String** `filePath`: The output file path.
 - **Function** `cb`: The callback function.
 
